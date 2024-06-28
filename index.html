@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="library.js" defer></script>
+
+        <meta charset="UTF-8"/>
+
+        <title>Library</title>
+
+    </head>
+    <body>
+        <main>
+            <div class="header">
+                <p>Library App</p>
+            </div>
+            <div class="main-content">
+                <div class="button-div">
+                    <button id="add-form-toggle">Add Book</button>
+                </div>
+                <div class="cards-grid"></div>
+                <div class="form-overlay hidden"></div>
+                <section class="modal hidden">
+                    <div class="add-form-div">
+                        <div class="close-form">
+                            <img id="close-button" src="media/close.svg" width="25px">
+                        </div>
+                        <h2 id="form-title">Add Book</h2>
+                        <form id="add-book-form">
+                            <div class="form-input">
+                                <label for="book-title">Title*</label>
+                                <input type="text" id="book-title" name="book-title" required="">
+                            </div>
+                            <div class="form-input">
+                                <label for="book-author">Author</label>
+                                <input type="text" id="book-author" name="book-author">
+                            </div>
+                            <div class="form-input">
+                                <label for="book-title">Pages</label>
+                                <input type="text" id="book-pages" name="book-pages">
+                            </div>
+                            <div class="form-input">
+                                <label for="book-have-read">Have you read this book?</label>
+                                <input type="checkbox" id="book-have-read" name="book-have-read">
+                            </div>
+                            <button type="submit" id="submit-btn">Confirm</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
